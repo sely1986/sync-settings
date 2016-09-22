@@ -80,4 +80,9 @@ module.exports = {
     default: false
     description: "Mute 'Latest backup is already applied' message"
     order: 16
+  gistRevisionId:
+    description: 'Override getting latest gist in lieu of:'
+    type: 'string'
+    default: ''
+    order: 17
 }

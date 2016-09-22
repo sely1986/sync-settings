@@ -59,6 +59,12 @@ SyncSettings =
       gistId = gistId.trim()
     return gistId
 
+  getGistRevisionId: ->
+    gistRevisionId = atom.config.get 'sync-settings.gistRevisionId'
+    if gistRevisionId
+      gistRevisionId = gistRevisionId.trim()
+    return gistRevisionId
+
   getPersonalAccessToken: ->
     token = atom.config.get 'sync-settings.personalAccessToken'
     if token
